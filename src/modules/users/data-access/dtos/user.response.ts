@@ -1,3 +1,1 @@
-export class ListUserResponse {
-    
-}
+export class ListUserResponse {}

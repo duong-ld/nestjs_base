@@ -1,0 +1,26 @@
+{
+    "type": "mysql",
+    "host": "127.0.0.1",
+    "port": 3306,
+    "username": "root",
+    "password": "secret",
+    "database": "test",
+    "entities": [
+        "dist/entities/*.entity.js"
+    ],
+    "migrationsTableName": "custom_migration_table",
+    "migrations": [
+        "dist/database/migrations/*.js"
+    ],
+    "seeds": ["dist/**/database/seeds/**/*.js"],
+    "cli": {
+        "migrationsDir": "src/database/migrations",
+        "entitiesDir": "src/entities"
+    },
+    "logging": true,
+    "synchronize": false,
+    "timezone": "Z",
+    "extra": {
+        "decimalNumbers": true
+    }
+}
